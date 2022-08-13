@@ -8,9 +8,14 @@ namespace Challenge1
         static void Main(string[] args)
         {
             // Demo1();
-            Fibonacci fibonacci = new Fibonacci();
-            fibonacci.SumFibonacci(200);
+            // Demo2();
 
+        }
+
+        private static void Demo2()
+        {
+            Fibonacci fibonacci = new Fibonacci();
+            fibonacci.SumFibonacci(20);
         }
 
         private static void Demo1()
@@ -37,13 +42,13 @@ namespace Challenge1
     }
     class Fibonacci
     {
-       public void SumFibonacci(int number)
+        public void SumFibonacci(int number)
         {
             int firstNumber = 1;
             int secondNumber = 2;
             int previousNumber;
             int resultSum = 0;
-            if (number < 4000)
+            if (number < 40)
             {
                 for (int i = 2; i < number; i++)
                 {
@@ -63,4 +68,5 @@ namespace Challenge1
             }
         }
     }
+
 }
